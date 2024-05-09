@@ -1,0 +1,346 @@
+html, body
+{
+    height: 100%;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 232, 234);
+}
+
+h2
+{
+    font-family: "MyFont";
+    font-size: 30pt;
+
+}
+
+@font-face
+{
+    font-family: 'MyFont';
+    src: url('Cochocib Script Latin Pro.ttf') format('truetype');
+}
+
+
+#header
+{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 20pt;
+    background-color: rgb(248, 248, 233);
+    text-align: center;
+}
+
+h1
+{
+    padding: 10px;
+    font-family: "MyFont";
+}
+
+#social
+{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+#social img
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@font-face
+{
+    font-family: 'My Font1';
+    src: url('Abadi\ MT\ Std\ Extra\ Light.otf') format('truetype');
+}
+
+#nav
+{
+    float: left;
+    width: 250px;
+    height: 100%;
+    font-family: 'My Font1';
+}
+
+#nav a, #nav a:visited
+{
+    color: black;
+    font-weight: 400;
+    display: block;
+    width: 150px;
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+#nav a:hover
+{
+    background-color: rgb(252, 203, 210);
+}
+
+a.active
+{
+    background-color: #e89abd !important;
+}
+
+#nav li
+{
+    list-style: none;
+}
+
+#nav ul
+{
+    padding: 0;
+}
+
+#content
+{
+    height: 2000px;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+#title h2
+{
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+}
+
+#footer
+{
+    clear: both;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid black;
+}
+
+#home_box
+{
+    width: 350px;
+    display: block;
+    margin: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.pics
+{
+    margin: 5px;
+}
+
+.pics img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+.pics1
+{
+    margin: 5px;
+}
+
+.pics1 img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+@font-face
+{
+    font-family: 'My Font';
+    src: url('Angsana\ New\ Italic.ttf') format('truetype');
+}
+
+#info
+{
+    font-family: "My Font";
+    font-size: 20pt;
+    font-style: bold;
+    text-align: justify;
+    background-color: white;
+    border-radius: 5px;
+    width: 65%;
+    padding: 5px;
+    float: right;
+}
+
+.videocontainer
+{
+    display: block;
+    text-align: center;
+    width: 85%;
+    float: left;
+}
+
+.video
+{
+    width: 560px;
+    height: 315px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.videocontainer_
+{
+    float: right;
+    display: block;
+    text-align: center;
+}
+
+.video_
+{
+    display: block;
+    width: 560px;
+    height: 315px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#Info2
+{
+    font-family: "My Font";
+    font-size: 20pt;
+    font-style: bold;
+    text-align: justify;
+    background-color: white;
+    border-radius: 5px;
+    width: 45%;
+    padding: 5px;
+    float: left;
+    margin-top: 70px;
+}
+
+#home_box
+{
+    background-color: white;
+}
+
+#infohabits
+{
+    font-family: "My Font";
+    font-size: 20pt;
+    font-style: bold;
+    text-align: justify;
+    background-color: white;
+    border-radius: 5px;
+    width: 45%;
+    padding: 5px;
+    margin-left: 10%;
+    float: left;
+}
+
+.pics2
+{
+    margin: 5px;
+}
+
+.pics2 img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+#Info3
+{
+    font-family: "My Font";
+    font-size: 20pt;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+}
+
+.container 
+{
+    padding: 20px;
+    float: left;
+}
+
+input[type=text], textarea, select
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]
+{
+    background-color: rgb(197, 194, 194);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=reset]
+{
+    background-color: rgb(197, 194, 194);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea
+{
+    height: 150px;
+}
+
+#gallery_image
+{
+    display: block;
+    width: 80%;
+}
+.allpics img
+{
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.allpics
+{
+    margin: 5px;
+    display: inline-block;
+}
