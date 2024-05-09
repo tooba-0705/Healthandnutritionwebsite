@@ -40,36 +40,71 @@
             <div id="title">
                 <h2>Gallery</h2>
             </div>
-            <div id="gallery_image">
+            <div id="container1">
 
-                <div class="allpics">
-                    <img src="images/picture 1.jpg">
-                </div>   
-                 <div class="allpics">
-                <img src="images/Picture2.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 3.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 4.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 5.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 6.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 7.jpg">
-                </div>
-                <div class="allpics">
-                    <img src="images/picture 9.jpg">
-                </div>
+                <img class="mySlides" src="images/picture 1.jpg">
+                <img class="mySlides" src="images/Picture2.jpg">
+                <img class="mySlides" src="images/picture 3.jpg">
+                <img class="mySlides" src="images/picture 4.jpg">
+                <img class="mySlides" src="images/picture 5.jpg">
+                <img class="mySlides" src="images/picture 6.jpg">
+                <img class="mySlides" src="images/picture 7.jpg">
+                <img class="mySlides" src="images/picture 9.jpg">
+
+                <div class="leftButton" onclick="plusDivs(-1)">
+                    <img src="images/leftArrow.png" alt="left arrow"></div>
+                <div class="rightButton" onclick="plusDivs(1)">
+                <img src="images/nextArrow.png" alt="next arrow"></div>
             </div>
-         
-        
         </div>
+        
+        <script>
+            var slideIndex = 1; // creating a variable called slide index
+            showDivs (slideIndex) ; // calling the show divs function with the slide index in it
+
+            // this is the plus divs function
+            function plusDivs (n) {
+               showDivs (slideIndex += n);
+            }
+            
+            // this is the current div function
+            function currentDiv (n) {
+               showDivs (slideIndex = n);
+            }
+            // this is the show divs functions
+            function showDivs (n) {
+
+            
+
+               var i; // local variable called i
+
+               var x = document.getElementsByClassName("mySlides");
+               // this is the variable called x
+               // in this variable we will hold the my slides div
+               // we are identifying the div using the class element
+
+               if (n > x.length) {slideIndex = 1}
+               // if we gone through all of the images then we reset back to the first one.
+
+               if (n < 1) {slideIndex = x.length}
+               // if we have gone through the number of images we have then we reset back to the first one.
+
+               // below is for loop which will go through x and show only the one present
+               // it will hid erest of the images from view.
+               for (i = 0; i < x.length; i++)
+               {
+
+                   x[i].style.display ="none"; // we are changing the display style to none
+                   // this will amke it invisible from the screen
+
+
+               }
+
+               x[slideIndex-1].style.display ="block";
+               // this will show only 1 iamge
+            }
+
+       </script>
 
         <div id="footer">
             <a href="home.html">Home</a>  |  <a href="healthy eating.html">Healthy Eating</a>  |  <a href="exercise.html">Exercise</a>  |  <a href="habits.html">Sleeping Habits</a>  |  <a href="insomnia.html">Insomnia</a>  |  <a href="anxiety.html">Anxiety</a>  |  <a href="gallery.html">Gallery</a>  |  <a href="contact us.html">Contact Us</a>

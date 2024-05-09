@@ -344,3 +344,39 @@ textarea
     margin: 5px;
     display: inline-block;
 }
+
+.play
+{
+    animation: fadein .4s ease-in;
+}
+
+#container1
+{
+    padding-top: 10px;
+    padding-left: 5%;
+    width: 500px;
+    height: 80%;
+    margin-left: 300px;
+    position: relative;
+}
+
+.mySlides
+{
+    height: 700px;
+    box-shadow: 0 0 11px floralwhite;
+}
+
+.leftButton
+{
+    font-size: 20pt;
+    cursor: pointer;
+    position: absolute;
+}
+
+.rightButton
+{
+    font-size: 20pt;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+}
